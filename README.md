@@ -39,7 +39,6 @@
 ├── docs/                    # 📄 Source markdown files
 ├── db/
 │   ├── chromadb/            # 📦 ChromaDB persistent storage
-│   └── chatSession.db       # 💬 SQLite chat memory
 ├── logs/                    # 📜 Log files
 ├── .env                     # 🔐 Env variables
 └── requirements.txt         # 📦 All required dependencies
