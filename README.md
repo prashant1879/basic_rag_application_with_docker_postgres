@@ -1,6 +1,6 @@
 
 
-# Basic RAG App — Retrieval-Augmented Generation with Modern AI Stack
+# Basic RAG App — Retrieval-Augmented Generation with Docker and Postgres
 
 > **RAG = Retrieval-Augmented Generation**  
 > This app combines document retrieval with LLMs to deliver accurate, context-based answers.
