@@ -1,0 +1,18 @@
+conda create --name basic_chat_bot python=3.12.3
+conda activate basic_chat_bot
+pip install -r requirements.txt
+python main.py
+
+
+conda remove --name basic_chat_bot --all
+
+
+mkdir myproject
+cd myproject
+python3 -m venv myenv
+source myenv/bin/activate
+
+docker-compose build
+docker-compose up
+docker-compose down -v  # removes containers and volumes (important!)
+docker-compose up --build

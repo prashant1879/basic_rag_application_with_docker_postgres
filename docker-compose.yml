@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: rag-demo
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "9000:5432"
+
+  fastapi:
+    build: .
+    depends_on:
+      - postgres
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres/rag-demo
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: python start.py
+
+volumes:
+  postgres_data:
