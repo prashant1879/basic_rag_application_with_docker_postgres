@@ -3,7 +3,20 @@
 # Basic RAG App — Retrieval-Augmented Generation with Docker and Postgres
 
 > **RAG = Retrieval-Augmented Generation**  
-> This app combines document retrieval with LLMs to deliver accurate, context-based answers.
+> RAG is an architecture that combines retrieval-based methods and generative models to enhance content accuracy and relevance. It leverages Docker for containerization, PostgreSQL for long-term data storage, LangChain for orchestration, ChromaDB for vector-based similarity search, LangGraph for graph-based data handling, and OpenAI’s GPT for natural language generation.
+
+Key components include:
+
+**Docker** ensures a consistent and scalable environment for services.
+**PostgreSQL** stores structured data like metadata or user information.
+**ChromaDB** stores vector embeddings of data for fast semantic searches.
+**LangChain** orchestrates the flow between databases, retrieval systems, and generative models.
+**LangGraph** helps represent and retrieve connected data efficiently.
+**OpenAI’s** GPT generates contextually relevant responses based on retrieved data.
+
+Workflow: User queries are processed by LangChain, which retrieves relevant data from PostgreSQL and ChromaDB. OpenAI’s model then generates responses informed by this data. This setup allows for real-time, adaptive systems that improve as more data is added.
+
+This architecture is ideal for applications like customer support, personalized content generation, and knowledge management, providing a scalable, context-aware solution for data-driven content generation.
 
 
 ### 🚀 Tech Stack Overview:
