@@ -7,7 +7,7 @@
 
 Key components include:
 
-**Docker** ensures a consistent and scalable environment for services. \n
+**Docker** ensures a consistent and scalable environment for services.
 **PostgreSQL** stores structured data like metadata or user information.
 **ChromaDB** stores vector embeddings of data for fast semantic searches.
 **LangChain** orchestrates the flow between databases, retrieval systems, and generative models.
