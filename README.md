@@ -1,6 +1,6 @@
 
 
-# 🤖 Basic RAG App — Retrieval-Augmented Generation with Modern AI Stack
+# Basic RAG App — Retrieval-Augmented Generation with Modern AI Stack
 
 > **RAG = Retrieval-Augmented Generation**  
 > This app combines document retrieval with LLMs to deliver accurate, context-based answers.
@@ -8,17 +8,19 @@
 
 ### 🚀 Tech Stack Overview:
 
-| 🧩 Layer          | ⚙️ Technology           | 📝 Description |
-|------------------|-------------------------|----------------|
-| 💻 Language       | `Python`                | Base language for the app |
-| 🔗 Framework      | `FastAPI`               | Lightweight web API framework |
-| 🧠 LLM & Orchestration | `LangChain`, `LangGraph` | Manages prompt flows and toolchains |
-| 🧮 Embeddings     | `OpenAIEmbeddings`      | Turns text into numerical vectors |
-| 📦 Vector Store   | `ChromaDB`              | Used to store and search document chunks |
-| 📂 Document Loader | `unstructured`, `markdown` | Handles parsing `.md` files |
-| 🧠 Chat Memory    | `LangGraph SQLite Checkpoint` | Maintains session history by user |
-| 🤖 Model    | `gpt-4o-mini` | OpenAI ChatGPT model |
-| 📜 Logging        | `aiologger`, `logger.py` | Custom async logging system |
+| 🧩 Layer             | ⚙️ Technology                 | 📝 Description |
+|----------------------|------------------------------|----------------|
+| 💻 Language           | `Python`                     | Base language for the app |
+| 🔗 Framework          | `FastAPI`                    | Lightweight web API framework |
+| 🧠 LLM & Orchestration | `LangChain`, `LangGraph`     | Manages prompt flows and toolchains |
+| 🧮 Embeddings         | `OpenAIEmbeddings`           | Turns text into numerical vectors |
+| 📦 Vector Store       | `ChromaDB`                   | Used to store and search document chunks |
+| 📂 Document Loader    | `unstructured`, `markdown`   | Handles parsing `.md` files |
+| 🧠 Chat Memory        | `LangGraph SQLite Checkpoint`| Maintains session history by user |
+| 🤖 Model              | `gpt-4o-mini`                | OpenAI ChatGPT model |
+| 📜 Logging            | `aiologger`, `logger.py`     | Custom async logging system |
+| 🐘 Database           | `PostgreSQL` (via Docker)    | Stores relational data like metadata or session info |
+| 🐳 Containerization   | `Docker`, `Docker Compose`   | Manages isolated app environments and service orchestration |
 
 
 ## 🗂️ Project Structure
